@@ -1,0 +1,134 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url("https://fonts.googleapis.com/css?family=Fira+Sans+Condensed");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+h1 {
+  font-size: 2.8rem;
+  font-family: 'Roboto Mono', sans-serif; }
+
+h2 {
+  font-size: 1.5rem;
+  font-family: 'Roboto Mono', sans-serif; }
+
+p {
+  font-size: 1.2rem;
+  font-family: 'Roboto Mono', sans-serif; }
+
+.black {
+  color: #2E4259; }
+
+.white {
+  color: #FCFCFF; }
+
+.gray {
+  color: #E3E6E0; }
+
+.light-blue {
+  color: #A3CEFF; }
+
+.blue {
+  color: #52489C; }
+
+body {
+  background: #FCFCFF;
+  overflow: hidden; }
+
+div#page-wrapper {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  overflow: hidden;
+  float: left;
+  position: relative; }
+  div#page-wrapper div#left-pannel {
+    height: 100vh;
+    width: 33vw; }
+    div#page-wrapper div#left-pannel div#nav-parent {
+      float: left;
+      transform: translate(-50%);
+      margin: 50% 0 0 50%;
+      padding: 20px;
+      display: grid;
+      grid-template-rows: 1fr 1fr 1fr;
+      grid-gap: 20px; }
+      div#page-wrapper div#left-pannel div#nav-parent h2.other {
+        transition-duration: 0.3s;
+        transition-timing-function: ease-in-out; }
+        div#page-wrapper div#left-pannel div#nav-parent h2.other:hover {
+          padding-left: 10px;
+          cursor: pointer;
+          opacity: 0.5; }
+      div#page-wrapper div#left-pannel div#nav-parent h2.current {
+        color: #52489C;
+        cursor: pointer; }
+  div#page-wrapper div#middle-pannel {
+    height: 100vh;
+    width: 33vw;
+    border-width: 0 1px;
+    border-color: #E3E6E0;
+    border-style: solid;
+    overflow: hidden; }
+    div#page-wrapper div#middle-pannel h1#giant-name {
+      font-size: 100px;
+      letter-spacing: 5px;
+      white-space: nowrap;
+      position: absolute;
+      transform: translate(90px, -40px);
+      opacity: 0.7; }
+    div#page-wrapper div#middle-pannel h1#paragraph-title {
+      display: block;
+      font-weight: bold;
+      float: left;
+      margin: 60% 0 0 50%;
+      transform: translate(-50%); }
+  div#page-wrapper div#right-pannel {
+    height: 100vh;
+    width: 33vw;
+    overflow-x: hidden; }
+
+/*# sourceMappingURL=scribe.css.map */
