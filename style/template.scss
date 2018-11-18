@@ -5,36 +5,19 @@ $light-blue: #A3CEFF;
 $blue: #52489C;
 
 h1 {
+    color: $black;
     font-size: 2.8rem;
     font-family: 'Roboto Mono', sans-serif;
 }
 
 h2 {
-    font-size: 1.5rem;
+    color: $black;
+    font-size: 1.6rem;
     font-family: 'Roboto Mono', sans-serif;
 }
 
 p {
-    font-size: 1.2rem;
-    font-family: 'Roboto Mono', sans-serif;
-}
-
-.black {
     color: $black;
-}
-
-.white {
-    color: $white;
-}
-
-.gray {
-    color: $gray;
-}
-
-.light-blue {
-    color: $light-blue;
-}
-
-.blue {
-    color: $blue;
+    font-size: 1.4rem;
+    font-family: 'Roboto Mono', sans-serif;
 }
