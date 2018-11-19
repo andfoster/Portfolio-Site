@@ -10,24 +10,24 @@
     <link href="style/scribe.css" rel="stylesheet">
 </head>
 
-<body>
+<body onload="slideLoad()" onloadstart="slideLoad(init)">
     <div id="index-wrapper">
         <div id="left-pannel">
             <div class="divider-small"></div>
             <div id="nav-parent">
                 <div id="nav-wrapper">
-                    <h2 class="current">About</h2>
-                    <h2>Projects</h2>
-                    <h2>Contact</h2>
+                    <h2 class="current slide-load">About</h2>
+                    <h2 class="slide-load">Projects</h2>
+                    <h2 class="slide-load">Contact</h2>
                 </div>
             </div>
         </div>
         <div id="middle-pannel">
-            <h1 id="giant-name" class="black">ANDREW FOSTER</h1>
+            <h1 id="giant-name" class="slide-load">ANDREW FOSTER</h1>
             <div class="divider-small"></div>
-            <h1 id="paragraph-title" class="black">About Me</h1>
+            <h1 id="paragraph-title" class="slide-load">About Me</h1>
             <div id="paragraph-parent">
-                <p id="paragraph">
+                <p id="paragraph" class="slide-load">
                     My name is Andrew Foster and I am a freelance web designer from South Carolina. I have 10 years of 
                     programming experience to go off of as well as professional experience. I specialize in User Experience for web applications however, I am proficient in developement and general UI design. 
                     Navigate my site to see my projects, experiences, and contact information.
@@ -38,5 +38,26 @@
         </div>
     </div>
 </body>
+
+<script>
+    const slideLoad = (type) => {
+        let elements = document.getElementsByClassName("slide-load");
+        
+        if(type === 'init') {
+            for(i = 0; i < elements.length; i++) {
+                elements[i].style.transitionDuration = "0.25s";
+                elements[i].style.transform = "translate(-100px)";
+                elements[i].style.opacity = 0;
+            }   
+        } else {
+            for(i = 0; i < elements.length; i++) {
+                elements[i].style.transform = "translate(100px)";
+                elements[i].style.opacity = 1;
+            }
+        }
+
+        
+    }
+</script>
 
 </html>
