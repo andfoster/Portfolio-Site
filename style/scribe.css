@@ -75,7 +75,19 @@ div#page-wrapper {
   position: relative; }
   div#page-wrapper div#left-pannel {
     height: 100vh;
-    width: 33vw; }
+    width: 33vw;
+    overflow: hidden; }
+    div#page-wrapper div#left-pannel div.divider-small {
+      width: 2px;
+      height: 120vw;
+      background-color: #E3E6E0;
+      transform: rotate(56deg);
+      top: -80vh;
+      padding: 5em;
+      position: absolute;
+      z-index: -20;
+      left: 10%;
+      opacity: 0.3; }
     div#page-wrapper div#left-pannel div#nav-parent {
       float: left;
       display: block;
@@ -103,7 +115,9 @@ div#page-wrapper {
     overflow: visible;
     border-width: 0 1px;
     border-color: #E3E6E0;
-    border-style: solid; }
+    border-style: solid;
+    background-color: #FCFCFF;
+    z-index: 2; }
     div#page-wrapper div#middle-pannel h1#giant-name {
       font-size: 100px;
       letter-spacing: 5px;
@@ -112,6 +126,17 @@ div#page-wrapper {
       float: right;
       transform: translate(90px, -40px);
       opacity: 0.7; }
+    div#page-wrapper div#middle-pannel div.divider-small {
+      width: 2px;
+      height: 100%;
+      background-color: #E3E6E0;
+      transform: rotate(-12deg);
+      top: -5vh;
+      padding: 5em;
+      position: absolute;
+      z-index: -20;
+      left: 80%;
+      opacity: 0.5; }
     div#page-wrapper div#middle-pannel h1#paragraph-title {
       text-rendering: optimizeLegibility;
       display: block;
@@ -119,14 +144,15 @@ div#page-wrapper {
       float: left;
       margin: 45vh 0 0 50%;
       transform: translate(-50%);
-      white-space: nowrap; }
+      white-space: nowrap;
+      font-size: 2em; }
     div#page-wrapper div#middle-pannel p#paragraph {
       font-size: 1.5em;
       position: relative;
-      margin: 55vh 0 0 50%;
+      margin: 60vh 0 0 50%;
       transform: translate(-50%);
       white-space: nowrap;
-      line-height: 1.8em; }
+      line-height: 1.5em; }
   div#page-wrapper div#right-pannel {
     height: 100vh;
     width: 33vw;

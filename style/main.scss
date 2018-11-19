@@ -15,6 +15,20 @@ div#page-wrapper {
     div#left-pannel {
         height: 100vh;
         width: 33vw;
+        overflow: hidden;
+
+        div.divider-small {
+            width: 2px;
+            height: 120vw;
+            background-color: $gray;
+            transform: rotate(56deg);
+            top: -80vh;
+            padding: 5em;
+            position: absolute;
+            z-index: -20;
+            left: 10%;
+            opacity: 0.3;
+        }
 
         div#nav-parent {
             float: left;
@@ -60,6 +74,9 @@ div#page-wrapper {
         border-color: $gray;
         border-style: solid;
 
+        background-color: $white;
+        z-index: 2;
+
         h1#giant-name {
             font-size: 100px;
             letter-spacing: 5px;
@@ -70,6 +87,19 @@ div#page-wrapper {
             opacity: 0.7;
         }
 
+        div.divider-small {
+            width: 2px;
+            height: 100%;
+            background-color: $gray;
+            transform: rotate(-12deg);
+            top: -5vh;
+            padding: 5em;
+            position: absolute;
+            z-index: -20;
+            left: 80%;
+            opacity: 0.5;
+        }
+
         h1#paragraph-title {
             text-rendering: optimizeLegibility;
             display: block;
@@ -78,16 +108,17 @@ div#page-wrapper {
             margin: 45vh 0 0 50%;
             transform: translate(-50%);
             white-space: nowrap;
+            font-size: 2em;
         }
 
         p#paragraph {
             font-size: 1.5em;
             position: relative; 
-            margin: 55vh 0 0 50%;
+            margin: 60vh 0 0 50%;
             transform: translate(-50%);
             white-space: nowrap;
 
-            line-height: 1.8em;
+            line-height: 1.5em;
         }
 
     }
