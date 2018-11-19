@@ -65,7 +65,7 @@ body {
   background: #FCFCFF;
   overflow: hidden; }
 
-div#page-wrapper {
+div#index-wrapper {
   width: 100vw;
   height: 100vh;
   display: grid;
@@ -73,43 +73,48 @@ div#page-wrapper {
   overflow: hidden;
   float: left;
   position: relative; }
-  div#page-wrapper div#left-pannel {
+  div#index-wrapper div#left-pannel {
     height: 100vh;
     width: 33vw;
     overflow: hidden; }
-    div#page-wrapper div#left-pannel div.divider-small {
+    div#index-wrapper div#left-pannel div.divider-small {
       width: 2px;
-      height: 120vw;
+      height: 100vw;
       background-color: #E3E6E0;
       transform: rotate(56deg);
-      top: -80vh;
       padding: 5em;
       position: absolute;
+      left: 5%;
       z-index: -20;
-      left: 10%;
+      bottom: -70%;
       opacity: 0.3; }
-    div#page-wrapper div#left-pannel div#nav-parent {
+    div#index-wrapper div#left-pannel div#nav-parent {
       float: left;
       display: block;
       text-align: center;
       width: 100%;
       height: 100vh; }
-      div#page-wrapper div#left-pannel div#nav-parent div#nav-wrapper {
+      div#index-wrapper div#left-pannel div#nav-parent div#nav-wrapper {
         display: inline-grid;
         grid-template-rows: 1fr 1fr 1fr;
-        grid-row-gap: 12px;
+        grid-row-gap: 30px;
         position: absolute;
         top: 50%;
         left: 16%;
-        transform: translate(-50%, -50%); }
-        div#page-wrapper div#left-pannel div#nav-parent div#nav-wrapper .current {
+        transform: translate(-50%, -50%);
+        padding: 30px; }
+        div#index-wrapper div#left-pannel div#nav-parent div#nav-wrapper h2 {
+          transition-duration: 0.1s;
+          transition-timing-function: ease-in-out; }
+        div#index-wrapper div#left-pannel div#nav-parent div#nav-wrapper .current {
           color: #52489C;
           font-weight: bold; }
-        div#page-wrapper div#left-pannel div#nav-parent div#nav-wrapper h2:not(.current):hover {
-          opacity: 0.8; }
-        div#page-wrapper div#left-pannel div#nav-parent div#nav-wrapper h2:hover {
+        div#index-wrapper div#left-pannel div#nav-parent div#nav-wrapper h2:not(.current):hover {
+          opacity: 0.8;
+          font-size: 1.8em; }
+        div#index-wrapper div#left-pannel div#nav-parent div#nav-wrapper h2:hover {
           cursor: pointer; }
-  div#page-wrapper div#middle-pannel {
+  div#index-wrapper div#middle-pannel {
     height: 100vh;
     width: 33vw;
     overflow: visible;
@@ -118,15 +123,15 @@ div#page-wrapper {
     border-style: solid;
     background-color: #FCFCFF;
     z-index: 2; }
-    div#page-wrapper div#middle-pannel h1#giant-name {
+    div#index-wrapper div#middle-pannel h1#giant-name {
       font-size: 100px;
       letter-spacing: 5px;
       white-space: nowrap;
       position: absolute;
       float: right;
-      transform: translate(90px, -40px);
+      transform: translate(90px, -35px);
       opacity: 0.7; }
-    div#page-wrapper div#middle-pannel div.divider-small {
+    div#index-wrapper div#middle-pannel div.divider-small {
       width: 2px;
       height: 100%;
       background-color: #E3E6E0;
@@ -137,7 +142,7 @@ div#page-wrapper {
       z-index: -20;
       left: 80%;
       opacity: 0.5; }
-    div#page-wrapper div#middle-pannel h1#paragraph-title {
+    div#index-wrapper div#middle-pannel h1#paragraph-title {
       text-rendering: optimizeLegibility;
       display: block;
       font-weight: bold;
@@ -146,14 +151,15 @@ div#page-wrapper {
       transform: translate(-50%);
       white-space: nowrap;
       font-size: 2em; }
-    div#page-wrapper div#middle-pannel p#paragraph {
-      font-size: 1.5em;
-      position: relative;
-      margin: 60vh 0 0 50%;
-      transform: translate(-50%);
-      white-space: nowrap;
+    div#index-wrapper div#middle-pannel div#paragraph-parent {
+      height: 50%;
+      width: 67vw;
+      float: left; }
+    div#index-wrapper div#middle-pannel p#paragraph {
+      font-size: 1.2em;
+      padding: 20px;
       line-height: 1.5em; }
-  div#page-wrapper div#right-pannel {
+  div#index-wrapper div#right-pannel {
     height: 100vh;
     width: 33vw;
     overflow-x: hidden; }
