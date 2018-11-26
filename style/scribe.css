@@ -61,9 +61,27 @@ p {
   font-size: 1.4rem;
   font-family: 'Roboto Mono', sans-serif; }
 
+a {
+  border: none;
+  outline: none;
+  text-decoration: none; }
+  a p:hover {
+    opacity: 0.8;
+    cursor: pointer; }
+
 body {
   background: #FCFCFF;
   overflow: hidden; }
+
+p#email-link {
+  text-align: center;
+  margin-top: 50vh;
+  transform: translateY(-50%); }
+
+p#twitter-link {
+  text-align: center;
+  margin-top: 50vh;
+  transform: translateY(-50%); }
 
 div#index-wrapper {
   width: 100vw;
@@ -75,18 +93,16 @@ div#index-wrapper {
   position: relative; }
   div#index-wrapper div#left-pannel {
     height: 100vh;
-    width: 33vw;
+    width: auto;
     overflow: hidden; }
     div#index-wrapper div#left-pannel div.divider-small {
-      width: 2px;
-      height: 100vw;
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%) translateX(-50%) rotate(50deg);
+      left: 50%;
+      width: 200px;
+      height: 60vw;
       background-color: #E3E6E0;
-      transform: rotate(56deg);
-      padding: 5em;
-      position: absolute;
-      left: 5%;
-      z-index: -20;
-      bottom: -70%;
       opacity: 0.3; }
     div#index-wrapper div#left-pannel div#nav-parent {
       float: left;
@@ -154,14 +170,15 @@ div#index-wrapper {
     div#index-wrapper div#middle-pannel div#paragraph-parent {
       height: 50%;
       width: 67vw;
-      float: left; }
+      float: left;
+      text-align: center; }
     div#index-wrapper div#middle-pannel p#paragraph {
       font-size: 1.2em;
-      padding: 20px;
+      padding: 20px 50px;
       line-height: 1.5em; }
   div#index-wrapper div#right-pannel {
     height: 100vh;
-    width: 33vw;
+    width: auto;
     overflow-x: hidden; }
 
 /*# sourceMappingURL=scribe.css.map */

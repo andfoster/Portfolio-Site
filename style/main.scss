@@ -3,6 +3,18 @@ body {
     overflow: hidden;
 }
 
+p#email-link{
+    text-align: center;
+    margin-top: 50vh;
+    transform: translateY(-50%);
+}
+
+p#twitter-link {
+    text-align: center;
+    margin-top: 50vh;
+    transform: translateY(-50%);
+}
+
 div#index-wrapper {
     width: 100vw;
     height: 100vh;
@@ -14,19 +26,18 @@ div#index-wrapper {
 
     div#left-pannel {
         height: 100vh;
-        width: 33vw;
+        width: auto;
         overflow: hidden;
 
         div.divider-small {
-            width: 2px;
-            height: 100vw;
+            position: relative;
+            top: 50%;
+            transform: translateY(-50%) translateX(-50%) rotate(50deg);
+            left: 50%;
+            width: 200px;
+            height: 60vw;
             background-color: $gray;
-            transform: rotate(56deg);
-            padding: 5em;
-            position: absolute;
-            left: 5%;
-            z-index: -20;
-            bottom: -70%;
+
             opacity: 0.3;
         }
 
@@ -128,12 +139,13 @@ div#index-wrapper {
             height: 50%;
             width: 67vw;
             float: left;
+            text-align: center;
         }
 
         p#paragraph {
             font-size: 1.2em;
             // position: relative; 
-            padding: 20px;
+            padding: 20px 50px;
             // margin: 52vh 0 0 55%;
             // white-space: nowrap;
 
@@ -144,7 +156,7 @@ div#index-wrapper {
 
     div#right-pannel {
         height: 100vh;
-        width: 33vw;
+        width: auto;
 
         overflow-x: hidden;
 

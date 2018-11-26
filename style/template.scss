@@ -21,3 +21,15 @@ p {
     font-size: 1.4rem;
     font-family: 'Roboto Mono', sans-serif;
 }
+
+a {
+    border: none;
+    outline: none;
+    text-decoration: none;
+
+    p:hover {
+        opacity: 0.8;
+        cursor: pointer;
+    }
+
+}
